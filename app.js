@@ -28,6 +28,7 @@ app.get('/', function (req, res) {
  app.post('/create_item', function (req, res) {
 	//Getting body parameters
 	const { item_name, item_count} =req.body;
+	// testing
 
 	//Execute creatItems method
 	dbOperations.createItem(item_name, item_count, res);
